@@ -27,7 +27,7 @@ npm run dev
 
 ``` bash
 
-Open [http://localhost:3000](http://localhost:3000)
+Open [https://devlop-portfolio-nine.vercel.app](https://devlop-portfolio-nine.vercel.app)
 ```
 
 ### Build for Production
@@ -46,7 +46,7 @@ npm run start
 
 ## 📁 Key Structure
 
-\`\`\`
+``` bash
 ├── app/                    # Next.js App Router
 ├── components/
 │   ├── layout/            # Navigation
@@ -54,7 +54,7 @@ npm run start
 │   └── ui/               # Reusable components
 ├── lib/                   # Theme context & utils
 └── public/               # Static assets
-\`\`\`
+```
 
 ---
 
