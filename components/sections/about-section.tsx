@@ -35,7 +35,73 @@ const AboutSection = () => {
                     </p>
                 </div>
 
+                <div className="flex items-center px-60 gap-60 w-full">
+                    <div className="">
+                        <h3 className="text-black font-bold text-lg leading-tight">
+                            PREVIOUSLY
+                            <br />
+                            WORKED ON
+                        </h3>
+                    </div>
 
+                    <div className="w-full">
+                        <div className="flex w-full justify-between">
+                            <div
+                                className=" text-white px-6 py-3 rounded-full text-sm font-medium "
+                                style={{
+                                    transform: "rotate(11deg)",
+                                }}
+                            >
+                                <img src="/awwward.png" alt="Image 1" className="w-full h-auto rounded-full " />
+                            </div>
+                            <div
+                                className="text-white px-6 py-3 rounded-full text-sm font-medium"
+                                style={{
+                                    zIndex: 2,
+                                }}
+                            >
+                                <img src="/facebook.png" alt="Image 2" className="w-full h-auto ml-[68px] mt-[-40px] rounded-full" />
+                            </div>
+                            <div
+                                className=" text-white  px-6 py-3 rounded-full text-sm font-medium"
+                                style={{
+                                    transform: "rotate(14deg)",
+                                    zIndex: 2,
+                                }}
+                            >
+                                <img src="/cssDesign.png" alt="Image 3" className="w-full h-auto rounded-full" />
+                            </div>
+                        </div>
+                        <div className="flex w-full mt-[-65px] ml-[-120px] justify-between">
+                            <div
+                                className="text-white px-6 py-3 rounded-full text-sm font-medium"
+                                style={{
+                                    zIndex: 2,
+                                }}
+                            >
+                                <img src="/cssInner.png" alt="Image 4" className="w-full h-auto mt-[-10px] rounded-full" />
+                            </div>
+                            <div
+                                className="text-white px-6 py-3 rounded-full text-sm font-medium"
+                                style={{
+                                    transform: "rotate(-10deg)",
+                                    zIndex: 2,
+                                }}
+                            >
+                                <img src="/thoughtWork.png" alt="Image 5" className="w-full mt-[-38px] h-auto rounded-full" />
+                            </div>
+                            <div
+                                className="text-white px-6 py-3 rounded-full text-sm font-medium"
+                                style={{
+                                    zIndex: 2,
+                                }}
+                            >
+                                <img src="/autoDesk.png" alt="Image 6" className="w-full h-auto rounded-full" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     )
