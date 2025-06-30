@@ -42,7 +42,7 @@ const SkillsSection = () => {
         setCurrentSlide((prev) => (prev - 1 + taglines.length) % taglines.length)
     }
     return (
-        <section className="bg-[#000000] dark:bg-gray-900 text-white py-20 px-6 w-[99%] rounded-3xl z-20 mx-auto md:px-12 transition-colors duration-300">
+        <section id="portfolio" className="bg-[#000000] dark:bg-gray-900 text-white py-20 px-6 w-[99%] rounded-3xl z-20 mx-auto md:px-12 transition-colors duration-300">
             <div className="max-w-full md:px-16 mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
                     <div className="animate-fade-in">

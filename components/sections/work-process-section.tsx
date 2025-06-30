@@ -32,7 +32,7 @@ const processes = [
 
 const WorkProcessSection = () => {
     return (
-        <section className="bg-black dark:bg-gray-900 text-white py-20 px-6 md:px-12 transition-colors duration-300">
+        <section id="blog" className="bg-black dark:bg-gray-900 text-white py-20 px-6 md:px-12 transition-colors duration-300">
             <div className="max-w-full mx-auto md:px-20">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8 mb-16 animate-fade-in">
                     <div className="flex items-center gap-2">

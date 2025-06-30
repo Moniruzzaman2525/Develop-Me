@@ -4,7 +4,7 @@ import { ArrowDown, ChevronLeft } from "lucide-react"
 
 const AboutSection = () => {
     return (
-        <div className="relative min-h-[90vh] w-full overflow-hidden">
+        <div id="about" className="relative min-h-[90vh] w-full overflow-hidden">
             <Image src="/about-banner.png" alt="Gradient background" fill className="object-cover" priority />
 
             <div className="relative z-10 min-h-screen p-8 md:p-12 lg:p-16">
