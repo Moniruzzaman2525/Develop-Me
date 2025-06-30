@@ -12,7 +12,7 @@ A modern, responsive developer portfolio built with Next.js, TypeScript, and Tai
 
 \`\`\`bash
 # Clone and install
-git clone `https://github.com/Moniruzzaman2525/Develop-Me.git`
+git clone [https://github.com/Moniruzzaman2525/Develop-Me.git](https://github.com/Moniruzzaman2525/Develop-Me.git)
 cd devlop-portfolio
 npm install
 or
