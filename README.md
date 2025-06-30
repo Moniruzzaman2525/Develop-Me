@@ -10,25 +10,31 @@ A modern, responsive developer portfolio built with Next.js, TypeScript, and Tai
 
 ### Installation & Run
 
-\`\`\`bash
-# Clone and install
-git clone [https://github.com/Moniruzzaman2525/Develop-Me.git](https://github.com/Moniruzzaman2525/Develop-Me.git)
+
+# Clone and Install
+
+``` bash
+git clone https://github.com/Moniruzzaman2525/Develop-Me.git
 cd devlop-portfolio
 npm install
-or
+# or
 npm install -f
+
+```
 
 # Run development server
 npm run dev
-\`\`\`
+
+``` bash
 
 Open [http://localhost:3000](http://localhost:3000)
+```
 
 ### Build for Production
 
-\`\`\`bash
+``` bash
 npm run start
-\`\`\`
+```
 
 
 ## 🛠️ Tech Stack
