@@ -4,9 +4,6 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card } from "@/components/ui/card"
 import { Moon, Sun, Phone, Facebook, Instagram, Twitter, ArrowDown } from "lucide-react"
 
 const ContactSection = () => {
@@ -27,12 +24,10 @@ const ContactSection = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
         console.log("Form submitted:", formData)
-        // Handle form submission here
     }
 
     const handleContactMe = () => {
         console.log("Contact me clicked")
-        // Handle contact action here
     }
 
     return (
@@ -62,25 +57,25 @@ const ContactSection = () => {
             </div>
 
             <div className="relative z-20 min-h-[60vh]">
-                <div className="max-w-full mx-auto md:px-32 md:py-14">
-                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ">
-                        <div className="space-y-6 lg:space-y-8">
+                <div className="max-w-full mx-auto px-4 sm:px-8 md:px-16 py-10 md:py-14">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                        <div className="space-y-8">
                             <div className="space-y-4">
                                 <div className="animate-fade-in">
-                                    <div className="flex items-center gap-2 mb-6">
+                                    <div className="flex items-center gap-2 mb-4">
                                         <div className="w-8 h-8 rounded-full border border-gray-800 dark:border-gray-700 flex items-center justify-center">
                                             <ArrowDown className="w-4 h-4" />
                                         </div>
-                                        <span className="text-sm border rounded-full border-gray-800 dark:border-gray-700 px-4 py-2">Contact</span>
+                                        <span className="text-sm border rounded-full border-gray-800 dark:border-gray-700 px-3 py-1">Contact</span>
                                     </div>
-                                    <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+                                    <h2 className="text-3xl md:text-5xl font-bold leading-tight">
                                         My Extensive
                                         <br />
                                         List of Skills
                                     </h2>
                                 </div>
 
-                                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+                                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
                                     Interested in{" "}
                                     <span className="bg-black dark:bg-white text-white dark:text-black px-2 py-1 inline-block transition-colors duration-300">
                                         work
@@ -88,105 +83,109 @@ const ContactSection = () => {
                                     together?
                                 </h1>
 
-                                <p className="text-lg text-gray-700 dark:text-gray-300 max-w-md leading-relaxed">
-                                    We start every new client interaction with an in-depth discovery call where we get to know each other
+                                <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-md leading-relaxed">
+                                    We start every new client interaction with an in-depth discovery call where we get to know each other.
                                 </p>
                             </div>
 
-                            <div className="transition-all w-[35%] border px-5 border-gray-800 dark:border-gray-700 py-3 gap-5 rounded-full flex items-center duration-200">
-                                <div className="flex items-center border px-5 border-gray-800 dark:border-gray-700 py-5 justify-center rounded-full">
+                            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-6">
+                                <div className="flex items-center border px-5 py-3 border-gray-800 dark:border-gray-700 rounded-full gap-3 w-full sm:w-auto">
                                     <Phone className="w-6 h-6" />
+                                    <button>
+                                        Schedule a Call
+                                    </button>
                                 </div>
-                                <button
-                                >
-                                    Schedule a Call
-                                </button>
                             </div>
                         </div>
-                        <div className="flex justify-center lg:justify-end">
-                            <Card className="w-full max-w-md bg-black/90 dark:bg-gray-900/95 backdrop-blur-sm border-gray-800 dark:border-gray-700 p-6 lg:p-8 shadow-2xl">
+
+                        <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+                            <div className="w-full max-w-sm sm:max-w-md bg-black rounded-3xl p-6 sm:p-8 shadow-2xl">
                                 <form onSubmit={handleSubmit} className="space-y-6">
-                                    <div>
-                                        <Input
-                                            name="name"
-                                            placeholder="Enter your name"
-                                            value={formData.name}
-                                            onChange={handleInputChange}
-                                            className="bg-transparent border-gray-600 dark:border-gray-500 text-white placeholder:text-gray-400 focus:border-gray-400 dark:focus:border-gray-300 transition-colors duration-200"
-                                        />
+                                    <div className="space-y-2">
+                                        <label className="block text-white text-sm sm:text-base">Enter your name</label>
+                                        <div className="border-b border-white/30 pb-2 focus-within:border-[#C5FF41] transition-colors duration-200">
+                                            <input
+                                                name="name"
+                                                type="text"
+                                                value={formData.name}
+                                                onChange={handleInputChange}
+                                                className="w-full bg-transparent text-white placeholder:text-transparent focus:outline-none text-base"
+                                                placeholder="Enter your name"
+                                            />
+                                        </div>
                                     </div>
 
-                                    <div>
-                                        <Input
-                                            name="email"
-                                            type="email"
-                                            placeholder="Your email address"
-                                            value={formData.email}
-                                            onChange={handleInputChange}
-                                            className="bg-transparent border-gray-600 dark:border-gray-500 text-white placeholder:text-gray-400 focus:border-gray-400 dark:focus:border-gray-300 transition-colors duration-200"
-                                        />
+                                    <div className="space-y-2">
+                                        <label className="block text-white/70 text-sm sm:text-base">Your email address</label>
+                                        <div className="border-b border-white/30 pb-2 focus-within:border-[#C5FF41] transition-colors duration-200">
+                                            <input
+                                                name="email"
+                                                type="email"
+                                                value={formData.email}
+                                                onChange={handleInputChange}
+                                                className="w-full bg-transparent text-white placeholder:text-transparent focus:outline-none text-base"
+                                                placeholder="Your email address"
+                                            />
+                                        </div>
                                     </div>
 
-                                    <div>
-                                        <Textarea
-                                            name="project"
-                                            placeholder="Describe your project"
-                                            value={formData.project}
-                                            onChange={handleInputChange}
-                                            rows={4}
-                                            className="bg-transparent border-gray-600 dark:border-gray-500 text-white placeholder:text-gray-400 focus:border-gray-400 dark:focus:border-gray-300 resize-none transition-colors duration-200"
-                                        />
+                                    <div className="space-y-2">
+                                        <label className="block text-white/70 text-sm sm:text-base">Describe your project</label>
+                                        <div className="border-b border-white/30 pb-2 focus-within:border-[#C5FF41] transition-colors duration-200">
+                                            <textarea
+                                                name="project"
+                                                value={formData.project}
+                                                onChange={handleInputChange}
+                                                rows={2}
+                                                className="w-full bg-transparent text-white placeholder:text-transparent focus:outline-none resize-none text-base"
+                                                placeholder="Describe your project"
+                                            />
+                                        </div>
                                     </div>
 
-                                    <div className="flex flex-col sm:flex-row gap-3">
-                                        <Button
+                                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                        <button
                                             type="submit"
-                                            variant="outline"
-                                            className="flex-1 bg-transparent border-gray-600 dark:border-gray-500 text-white hover:bg-white/10 dark:hover:bg-gray-700/50 transition-all duration-200"
+                                            className="flex items-center justify-center gap-2 bg-transparent border border-white/30 text-white px-6 py-3 rounded-full hover:bg-white/10 focus:border-[#C5FF41] transition-all duration-200 text-base font-normal w-full sm:w-auto"
                                         >
+                                            <div className="w-5 h-5 rounded-full border border-white/50 flex items-center justify-center">
+                                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                                            </div>
                                             Send
-                                        </Button>
-                                        <span className="text-gray-400 self-center text-sm">or</span>
-                                        <Button
+                                        </button>
+
+                                        <div className="flex items-center justify-center text-white/50 text-sm">or</div>
+
+                                        <button
                                             type="button"
                                             onClick={handleContactMe}
-                                            variant="outline"
-                                            className="flex-1 bg-transparent border-gray-600 dark:border-gray-500 text-white hover:bg-white/10 dark:hover:bg-gray-700/50 transition-all duration-200"
+                                            className="flex items-center justify-center gap-2 bg-transparent border border-white/30 text-white px-6 py-3 rounded-full hover:bg-white/10 focus:border-[#C5FF41] transition-all duration-200 text-base font-normal w-full sm:w-auto"
                                         >
+                                            <div className="w-5 h-5 rounded-full border border-white/50 flex items-center justify-center">
+                                                <div className="w-3 h-2 border border-white rounded-sm"></div>
+                                            </div>
                                             Contact me
-                                        </Button>
+                                        </button>
                                     </div>
 
-                                    <div className="pt-4 border-t border-gray-700 dark:border-gray-600">
-                                        <div className="flex items-center justify-between">
-                                            <span className="text-gray-400 text-sm">@williammey</span>
-                                            <div className="flex space-x-3">
-                                                <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="text-gray-400 hover:text-white hover:bg-white/10 dark:hover:bg-gray-700/50 h-8 w-8 transition-all duration-200"
-                                                >
-                                                    <Facebook className="h-4 w-4" />
-                                                </Button>
-                                                <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="text-gray-400 hover:text-white hover:bg-white/10 dark:hover:bg-gray-700/50 h-8 w-8 transition-all duration-200"
-                                                >
-                                                    <Instagram className="h-4 w-4" />
-                                                </Button>
-                                                <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="text-gray-400 hover:text-white hover:bg-white/10 dark:hover:bg-gray-700/50 h-8 w-8 transition-all duration-200"
-                                                >
-                                                    <Twitter className="h-4 w-4" />
-                                                </Button>
+                                    <div className="pt-6 border-t border-white/20">
+                                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                                            <span className="text-white/70 text-sm">@williamrey</span>
+                                            <div className="flex space-x-4">
+                                                <button type="button" className="text-white/70 hover:text-white transition-colors duration-200">
+                                                    <Facebook className="h-5 w-5" />
+                                                </button>
+                                                <button type="button" className="text-white/70 hover:text-white transition-colors duration-200">
+                                                    <Instagram className="h-5 w-5" />
+                                                </button>
+                                                <button type="button" className="text-white/70 hover:text-white transition-colors duration-200">
+                                                    <Twitter className="h-5 w-5" />
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
-                            </Card>
+                            </div>
                         </div>
                     </div>
                 </div>
