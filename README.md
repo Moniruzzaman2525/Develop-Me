@@ -7,9 +7,10 @@ A modern, responsive developer portfolio built with Next.js, TypeScript, and Tai
 ### Prerequisites
 - Node.js 18+
 - npm
+### Live Link
+[https://devlop-portfolio-nine.vercel.app](https://devlop-portfolio-nine.vercel.app)
 
 ### Installation & Run
-
 
 # Clone and Install
 
@@ -27,7 +28,7 @@ npm run dev
 
 ``` bash
 
-Open [https://devlop-portfolio-nine.vercel.app](https://devlop-portfolio-nine.vercel.app)
+Open http://localhost:3000
 ```
 
 ### Build for Production
