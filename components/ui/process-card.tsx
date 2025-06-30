@@ -14,7 +14,7 @@ export function ProcessCard({ title, description, variant, className }: ProcessC
   return (
     <div
       className={cn(
-        "group rounded-2xl p-6 md:p-8 transition-all duration-300 hover:scale-105 hover:rotate-2 focus-within:ring-2 focus-within:ring-offset-2",
+        "group rounded-2xl p-6 md:p-8 transition-all duration-300 hover:scale-105 hover:rotate-3 focus-within:ring-2 focus-within:ring-offset-2",
         "bg-gray-900 dark:bg-gray-800 text-white focus-within:ring-blue-500",
         "hover:bg-lime-400 hover:text-black dark:hover:bg-lime-400 dark:hover:text-black hover:focus-within:ring-lime-500",
         className,

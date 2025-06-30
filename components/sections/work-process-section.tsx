@@ -1,6 +1,6 @@
 
 
-import { ArrowRight } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import { ProcessCard } from "@/components/ui/process-card"
 
 const processes = [
@@ -37,7 +37,7 @@ const WorkProcessSection = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8 mb-16 animate-fade-in">
                     <div className="flex items-center gap-2">
                         <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center">
-                            <ArrowRight className="w-4 h-4" />
+                            <ArrowDown className="w-4 h-4" />
                         </div>
                         <span className="text-sm border border-white rounded-full px-4 py-1">Work Process</span>
                     </div>
