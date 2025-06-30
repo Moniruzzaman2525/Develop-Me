@@ -24,13 +24,12 @@ npm install -f
 ```
 
 # Run development server
-npm run dev
-
 ``` bash
+npm run dev
+``
 
-Open
-[http://localhost:3000](http://localhost:3000)
-```
+Open [http://localhost:3000](http://localhost:3000)
+
 
 ### Build for Production
 
