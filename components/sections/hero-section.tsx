@@ -4,7 +4,7 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 
 const HeroSection = () => {
     return (
-        <section id="home" className="relative top-10">
+        <section id="home" className="relative min-h-[85vh] mt-16 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/banner.png"
@@ -15,19 +15,21 @@ const HeroSection = () => {
                 />
             </div>
             <div className="absolute inset-0 z-0"></div>
-            <div className="min-h-screen overflow-y-hidden relative z-10 flex items-center">
-                <div className="w-full px-[50px]">
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight mb-28">
-                        Trusted{" "}
-                        <span className="bg-black text-white px-4 py-2 inline-block transition-all duration-300 hover:scale-105">
-                            Partner
-                        </span>{" "}
-                        <br />
-                        for Your Website{" "}
-                        <span className="bg-black text-white px-4 py-2 inline-block transition-all duration-300 hover:scale-105">
-                            Develop.
-                        </span>
-                    </h1>
+            <div className="min-h-[85vh] overflow-y-hidden relative z-10 flex items-center">
+                <div className="">
+                    <div className="mb-48 px-[50px] w-full">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight">
+                            Trusted{" "}
+                            <span className="bg-black text-white px-4 py-2 inline-block transition-all duration-300 hover:scale-105">
+                                Partner
+                            </span>{" "}
+                            <br />
+                            for Your Website{" "}
+                            <span className="bg-black text-white px-4 py-2 inline-block transition-all duration-300 hover:scale-105">
+                                Develop.
+                            </span>
+                        </h1>
+                    </div>
                     <div className="flex gap-60">
                         <div className="hidden items-center lg:flex justify-center space-x-4 pl-6">
                             <div className="mt-[107px]">
