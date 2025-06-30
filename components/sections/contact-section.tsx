@@ -44,18 +44,6 @@ const ContactSection = () => {
             </div>
 
             <div className="absolute inset-0 z-10 bg-white/10 dark:bg-black/20 backdrop-blur-[1px] transition-all duration-300" />
-
-            <div className="fixed top-4 right-4 z-50">
-                <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-gray-300 dark:border-gray-600"
-                >
-                    {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-                </Button>
-            </div>
-
             <div className="relative z-20 min-h-[60vh]">
                 <div className="max-w-full mx-auto px-4 sm:px-8 md:px-16 py-10 md:py-14">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

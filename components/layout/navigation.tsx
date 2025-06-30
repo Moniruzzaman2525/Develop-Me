@@ -23,7 +23,7 @@ const Navigation = () => {
     }
 
     return (
-        <header className="fixed top-0 left-0 right-0 w-full mx-auto rounded-b-3xl z-50 backdrop-blur-md shadow-sm">
+        <header className="fixed top-0 left-0 right-0 w-full mx-auto rounded-b-3xl z-50 backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-sm">
 
             <nav
                 className="flex items-center justify-between px-6 py-6 md:px-12"
