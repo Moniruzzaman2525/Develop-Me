@@ -1,7 +1,5 @@
-
-
-import { ArrowDown } from "lucide-react"
-import { ProcessCard } from "@/components/ui/process-card"
+import { ArrowDown } from "lucide-react";
+import { ProcessCard } from "@/components/ui/process-card";
 
 const processes = [
     {
@@ -28,7 +26,7 @@ const processes = [
             "Whether we've just finished designing your new site or you're handing off finished designs for us to develop in Webflow, we're here to apply our trusted development process to your project.",
         variant: "default" as const,
     },
-]
+];
 
 const WorkProcessSection = () => {
     return (
@@ -36,23 +34,31 @@ const WorkProcessSection = () => {
             <div className="max-w-full mx-auto md:px-20">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8 mb-16 animate-fade-in">
                     <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center">
-                            <ArrowDown className="w-4 h-4" />
+                        <div className="w-8 h-8 rounded-full border border-white dark:border-gray-500 flex items-center justify-center">
+                            <ArrowDown className="w-4 h-4 text-white dark:text-gray-300" />
                         </div>
-                        <span className="text-sm border border-white rounded-full px-4 py-1">Work Process</span>
+                        <span className="text-sm border border-white dark:border-gray-500 rounded-full px-4 py-1 text-white dark:text-gray-300">
+                            Work Process
+                        </span>
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-bold">My Work Process</h2>
+                    <h2 className="text-4xl md:text-6xl font-bold text-white dark:text-white">
+                        My Work Process
+                    </h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8">
                     {processes.map((process, index) => (
-                        <div key={process.title} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                        <div
+                            key={process.title}
+                            className="animate-slide-up"
+                            style={{ animationDelay: `${index * 0.1}s` }}
+                        >
                             <ProcessCard {...process} />
                         </div>
                     ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default WorkProcessSection
+export default WorkProcessSection;

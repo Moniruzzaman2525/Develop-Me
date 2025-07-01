@@ -8,14 +8,17 @@ import WorkProcessSection from "@/components/sections/work-process-section";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <SkillsSection />
-      <AboutSection />
-      <WorkProcessSection />
-      <ContactSection />
-      <Footer />
+    <main className="min-h-screen flex justify-center">
+      <div className="w-full max-w-[1440px]">
+        <Navigation />
+        <HeroSection />
+        <SkillsSection />
+        <AboutSection />
+        <WorkProcessSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </main>
   )
 }
+
