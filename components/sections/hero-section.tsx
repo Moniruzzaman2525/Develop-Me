@@ -42,7 +42,7 @@ const HeroSection = () => {
             scale: 1,
             transition: {
                 duration: 1,
-                ease: [0.25, 0.46, 0.45, 0.94],
+                ease: "easeOut",
             },
         },
     }
@@ -59,7 +59,7 @@ const HeroSection = () => {
             rotate: 0,
             transition: {
                 duration: 1.2,
-                ease: [0.25, 0.46, 0.45, 0.94],
+                ease: "easeOut",
             },
         },
     }
@@ -134,7 +134,7 @@ const HeroSection = () => {
             scale: 1,
             transition: {
                 duration: 1,
-                ease: [0.25, 0.46, 0.45, 0.94],
+                ease: "easeOut",
                 type: "spring",
                 stiffness: 100,
             },
@@ -164,7 +164,7 @@ const HeroSection = () => {
     }
 
     return (
-        <section ref={sectionRef} id="home" className="relative min-h-[85vh] py-20 mt-16 overflow-hidden">
+        <section ref={sectionRef} id="home" className="relative min-h-[85vh] mt-40 mb-20 md:mb-0 md:mt-16 overflow-hidden">
             <motion.div className="absolute inset-0 z-0" style={{ y: backgroundYSpring }}>
                 <Image
                     src="/banner.png"
@@ -173,21 +173,7 @@ const HeroSection = () => {
                     className="object-cover brightness-75 dark:brightness-50"
                     priority
                 />
-                <motion.div
-                    className="absolute inset-0"
-                    animate={{
-                        background: [
-                            "linear-gradient(45deg, transparent, transparent, rgba(0,0,0,0.1))",
-                            "linear-gradient(45deg, transparent, rgba(0,0,0,0.05), transparent)",
-                            "linear-gradient(45deg, transparent, transparent, rgba(0,0,0,0.1))",
-                        ],
-                    }}
-                    transition={{
-                        duration: 8,
-                        repeat: Number.POSITIVE_INFINITY,
-                        ease: "easeInOut",
-                    }}
-                />
+                <div className="absolute inset-0 bg-black/5 dark:bg-white/5" />
             </motion.div>
 
             <motion.div
