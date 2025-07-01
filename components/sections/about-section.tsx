@@ -5,9 +5,9 @@ const AboutSection = () => {
     return (
         <div
             id="about"
-            className="relative w-full overflow-hidden"
+            className="relative w-full overflow-y-scroll md:overflow-hidden"
             style={{
-                height: "clamp(800px, 100vh, 1000px)",
+                height: "clamp(900px, 100vh, 1000px)",
                 minHeight: "800px",
             }}
         >

@@ -93,7 +93,7 @@ const ContactSection: React.FC = () => {
         <div
             className="relative transition-colors duration-300"
             style={{
-                height: "clamp(500px, 60vh, 800px)",
+                height: "clamp(800px, 60vh, 800px)",
                 minHeight: "500px",
             }}
         >

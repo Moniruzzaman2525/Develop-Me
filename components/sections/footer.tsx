@@ -25,7 +25,7 @@ const Footer = () => {
     }, [])
 
     return (
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto mt-80 md:mt-0">
             <footer ref={footerRef} className="bg-black rounded-3xl p-6 md:p-12 text-white overflow-hidden">
                 <div className="flex flex-col lg:flex-row w-full justify-between">
                     <div className="flex flex-col md:flex-row justify-between items-start mb-8 md:mb-16">

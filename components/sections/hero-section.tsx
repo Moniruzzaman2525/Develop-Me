@@ -167,9 +167,9 @@ const HeroSection = () => {
         <section
             ref={sectionRef}
             id="home"
-            className="relative mt-20 py-32 overflow-hidden"
+            className="relative mt-20 py-40 overflow-y-scroll md:overflow-hidden"
             style={{
-                height: "clamp(600px, 75vh, 1000px)",
+                height: "clamp(800px, 80vh, 1000px)",
                 minHeight: "600px",
             }}
         >
