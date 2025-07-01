@@ -164,7 +164,15 @@ const HeroSection = () => {
     }
 
     return (
-        <section ref={sectionRef} id="home" className="relative min-h-[85vh] mt-40 mb-20 md:mb-0 md:mt-16 overflow-hidden">
+        <section
+            ref={sectionRef}
+            id="home"
+            className="relative mt-20 py-32 overflow-hidden"
+            style={{
+                height: "clamp(600px, 75vh, 1000px)",
+                minHeight: "600px",
+            }}
+        >
             <motion.div className="absolute inset-0 z-0" style={{ y: backgroundYSpring }}>
                 <Image
                     src="/banner.png"
@@ -172,19 +180,23 @@ const HeroSection = () => {
                     fill
                     className="object-cover brightness-75 dark:brightness-50"
                     priority
+                    sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-black/5 dark:bg-white/5" />
             </motion.div>
 
             <motion.div
-                className="min-h-[85vh] overflow-y-hidden relative z-10 flex items-center"
+                className="h-full relative z-10 flex items-center"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                style={{ y: textY }}
+                style={{
+                    y: textY,
+                    height: "100%",
+                }}
             >
-                <div className="w-full">
-                    <motion.div className="mb-48 px-[50px] w-full" variants={slideUpVariants}>
+                <div className="w-full h-full flex flex-col justify-center">
+                    <motion.div className="mb-12 md:mb-24 lg:mb-48 px-[50px] w-full flex-shrink-0" variants={slideUpVariants}>
                         <motion.div
                             animate={{
                                 y: [-10, 10, -10],
@@ -314,12 +326,12 @@ const HeroSection = () => {
                         </motion.div>
                     </motion.div>
 
-                    <div className="flex gap-60">
+                    <div className="flex gap-60 flex-1 items-center">
                         <motion.div
-                            className="hidden items-center lg:flex justify-center space-x-4 pl-6"
+                            className="hidden items-center lg:flex justify-center space-x-4 pl-6 h-full"
                             variants={slideInFromLeft}
                         >
-                            <div className="mt-[107px]">
+                            <div className="flex items-center h-full">
                                 <motion.div
                                     className="transform -rotate-90 text-sm text-black dark:text-white whitespace-nowrap"
                                     variants={fadeInVariants}
@@ -336,7 +348,7 @@ const HeroSection = () => {
                                 </motion.div>
                             </div>
                             <motion.div
-                                className="flex flex-col items-center space-y-4"
+                                className="flex flex-col items-center space-y-4 h-full justify-center"
                                 variants={textStaggerVariants}
                                 animate={{
                                     y: [-10, 10, -10],
@@ -437,7 +449,7 @@ const HeroSection = () => {
                             </motion.div>
                         </motion.div>
 
-                        <motion.div className="flex-1 flex px-6 md:px-12 lg:px-20" variants={slideUpVariants}>
+                        <motion.div className="flex-1 flex px-6 md:px-12 lg:px-20 h-full items-center" variants={slideUpVariants}>
                             <motion.div className="max-w-4xl" variants={textStaggerVariants}>
                                 <motion.div className="mb-8 space-y-2" variants={textStaggerVariants}>
                                     <motion.p
@@ -463,7 +475,6 @@ const HeroSection = () => {
                                         Your trusted partner for strategy, design, and dev.
                                     </motion.p>
                                 </motion.div>
-
                                 <motion.div
                                     variants={slideUpVariants}
                                     whileHover={{ scale: 1.08 }}

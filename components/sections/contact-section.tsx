@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
-import { Phone, Facebook, Instagram, Twitter, ArrowDown } from 'lucide-react'
+import { Phone, Facebook, Instagram, Twitter, ArrowDown } from "lucide-react"
 import { motion, type Variants } from "framer-motion"
 
 interface FormData {
@@ -90,7 +90,13 @@ const ContactSection: React.FC = () => {
     }
 
     return (
-        <div className="relative min-h-[60vh] transition-colors duration-300">
+        <div
+            className="relative transition-colors duration-300"
+            style={{
+                height: "clamp(500px, 60vh, 800px)",
+                minHeight: "500px",
+            }}
+        >
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/contact-banner.png"
@@ -98,20 +104,23 @@ const ContactSection: React.FC = () => {
                     fill
                     className="object-cover brightness-75 dark:brightness-50 transition-all duration-300"
                     priority
+                    sizes="100vw"
                 />
             </div>
             <div className="absolute inset-0 z-10 bg-white/10 dark:bg-black/20 backdrop-blur-[1px] transition-all duration-300" />
-
             <motion.div
-                className="relative z-20 min-h-[60vh]"
+                className="relative z-20 h-full"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={containerVariants}
+                style={{
+                    height: "100%",
+                    minHeight: "inherit",
+                }}
             >
-                <div className="max-w-full mx-auto px-4 sm:px-8 md:px-16 py-10 md:py-14">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                        {/* Left Section */}
+                <div className="max-w-full mx-auto px-4 sm:px-8 md:px-16 py-10 md:py-14 h-full">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center h-full">
                         <motion.div className="space-y-8" variants={itemVariants}>
                             <div className="space-y-4">
                                 <motion.div variants={itemVariants}>
@@ -145,7 +154,6 @@ const ContactSection: React.FC = () => {
                                         Let's work together
                                     </motion.h2>
                                 </motion.div>
-
                                 <motion.h1
                                     className="text-3xl md:text-5xl font-bold text-black dark:text-white leading-tight"
                                     initial={{ opacity: 0, y: 20 }}
@@ -163,7 +171,6 @@ const ContactSection: React.FC = () => {
                                     </motion.span>{" "}
                                     together?
                                 </motion.h1>
-
                                 <motion.p
                                     className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-md leading-relaxed"
                                     initial={{ opacity: 0, y: 20 }}
@@ -174,7 +181,6 @@ const ContactSection: React.FC = () => {
                                     We start every new client interaction with an in-depth discovery call where we get to know each other.
                                 </motion.p>
                             </div>
-
                             <motion.div
                                 className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-6"
                                 initial={{ opacity: 0, y: 20 }}
@@ -189,10 +195,7 @@ const ContactSection: React.FC = () => {
                                     whileTap={{ scale: 0.95 }}
                                     transition={{ duration: 0.2 }}
                                 >
-                                    <motion.div
-                                        whileHover={{ rotate: 15 }}
-                                        transition={{ duration: 0.2 }}
-                                    >
+                                    <motion.div whileHover={{ rotate: 15 }} transition={{ duration: 0.2 }}>
                                         <Phone className="w-6 h-6" />
                                     </motion.div>
                                     Schedule a Call
@@ -200,11 +203,7 @@ const ContactSection: React.FC = () => {
                             </motion.div>
                         </motion.div>
 
-                        {/* Right Section - Contact Form */}
-                        <motion.div
-                            className="flex justify-center lg:justify-end mt-8 lg:mt-0"
-                            variants={formVariants}
-                        >
+                        <motion.div className="flex justify-center lg:justify-end mt-8 lg:mt-0" variants={formVariants}>
                             <motion.div
                                 className="w-full max-w-sm sm:max-w-md bg-black dark:bg-white rounded-3xl p-6 sm:p-8 shadow-2xl transition-colors duration-300"
                                 whileHover={{
@@ -214,11 +213,8 @@ const ContactSection: React.FC = () => {
                                 transition={{ duration: 0.3 }}
                             >
                                 <form onSubmit={handleSubmit} className="space-y-6">
-                                    {/* Name Field */}
                                     <motion.div className="space-y-2" variants={inputVariants}>
-                                        <label className="block text-white dark:text-black text-sm sm:text-base">
-                                            Enter your name
-                                        </label>
+                                        <label className="block text-white dark:text-black text-sm sm:text-base">Enter your name</label>
                                         <motion.div
                                             className="border-b border-white/30 dark:border-black/30 pb-2 focus-within:border-[#C5FF41] transition-colors"
                                             whileFocus="focus"
@@ -235,7 +231,6 @@ const ContactSection: React.FC = () => {
                                         </motion.div>
                                     </motion.div>
 
-                                    {/* Email Field */}
                                     <motion.div className="space-y-2" variants={inputVariants}>
                                         <label className="block text-white/70 dark:text-black/70 text-sm sm:text-base">
                                             Your email address
@@ -256,7 +251,6 @@ const ContactSection: React.FC = () => {
                                         </motion.div>
                                     </motion.div>
 
-                                    {/* Project Description */}
                                     <motion.div className="space-y-2" variants={inputVariants}>
                                         <label className="block text-white/70 dark:text-black/70 text-sm sm:text-base">
                                             Describe your project
@@ -276,8 +270,6 @@ const ContactSection: React.FC = () => {
                                             />
                                         </motion.div>
                                     </motion.div>
-
-                                    {/* Buttons */}
                                     <motion.div
                                         className="flex flex-col sm:flex-row gap-4 pt-4"
                                         initial={{ opacity: 0, y: 20 }}
@@ -301,11 +293,7 @@ const ContactSection: React.FC = () => {
                                             </motion.div>
                                             Send
                                         </motion.button>
-
-                                        <div className="flex items-center justify-center text-white/50 dark:text-black/50 text-sm">
-                                            or
-                                        </div>
-
+                                        <div className="flex items-center justify-center text-white/50 dark:text-black/50 text-sm">or</div>
                                         <motion.button
                                             type="button"
                                             onClick={handleContactMe}
@@ -325,7 +313,6 @@ const ContactSection: React.FC = () => {
                                         </motion.button>
                                     </motion.div>
 
-                                    {/* Footer */}
                                     <motion.div
                                         className="pt-6 border-t border-white/20 dark:border-black/20"
                                         initial={{ opacity: 0, y: 20 }}

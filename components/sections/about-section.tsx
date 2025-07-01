@@ -3,16 +3,29 @@ import { ArrowDown } from "lucide-react"
 
 const AboutSection = () => {
     return (
-        <div id="about" className="relative min-h-screen w-full overflow-hidden">
+        <div
+            id="about"
+            className="relative w-full overflow-hidden"
+            style={{
+                height: "clamp(800px, 100vh, 1000px)",
+                minHeight: "800px",
+            }}
+        >
             <Image
                 src="/about-banner.png"
                 alt="Gradient background"
                 fill
                 className="object-cover"
                 priority
+                sizes="100vw"
             />
-
-            <div className="relative z-10 min-h-screen">
+            <div
+                className="relative z-10 h-full"
+                style={{
+                    height: "100%",
+                    minHeight: "inherit",
+                }}
+            >
                 <div className="w-full px-8 lg:px-16 pt-16">
                     <div className="max-w-[1600px] mx-auto">
                         <div className="flex justify-end gap-6 items-center mb-20">
@@ -25,7 +38,6 @@ const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="w-full px-8 lg:px-16">
                     <div className="max-w-[1600px] mx-auto">
                         <div className="text-center mb-24">
@@ -50,7 +62,6 @@ const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="w-full pb-20">
                             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[200px] flex-shrink-0">
@@ -60,7 +71,6 @@ const AboutSection = () => {
                                         WORKED ON
                                     </h2>
                                 </div>
-
                                 <div className="flex-1 w-full">
                                     <div className="block lg:hidden">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -104,7 +114,6 @@ const AboutSection = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                     <div className="hidden lg:block">
                                         <div className="relative">
                                             <div className="flex items-center justify-start gap-8 mb-8">
@@ -129,7 +138,6 @@ const AboutSection = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="flex items-center justify-start gap-8 -mt-4">
                                                 <div className="-ml-16 mt-[-9px]">
                                                     <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
