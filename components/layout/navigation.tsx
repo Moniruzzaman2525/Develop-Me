@@ -48,10 +48,12 @@ const Navigation = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <ThemeToggle />
+                    <div className="">
+                        <ThemeToggle />
+                    </div>
                     <AnimatedButton
                         variant="outline"
-                        className="hidden md:flex rounded-full border-2 border-black dark:border-white bg-transparent text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-6"
+                        className="hidden md:flex rounded-full border border-gray-300 dark:border-gray-600  bg-transparent text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-6"
                     >
                         Start Project
                     </AnimatedButton>
