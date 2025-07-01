@@ -75,17 +75,17 @@ const AboutSection = () => {
                                     <div className="block lg:hidden">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-black dark:bg-white text-white dark:text-black flex items-center justify-center rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300 shadow-lg">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-black dark:bg-white text-white dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium hover:scale-105 transition-transform duration-300 shadow-lg">
                                                     awwwards.
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                     facebook
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                     <span className="flex items-center gap-2">
                                                         <span className="w-4 h-4 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold">
                                                             S
@@ -95,17 +95,17 @@ const AboutSection = () => {
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                     CSS WINNER
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                     /thoughtworks
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                <div className="w-full max-w-[270px] h-[70px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                     <span className="flex items-center gap-2">
                                                         <span className="text-lg">🔧</span>
                                                         AUTODESK
@@ -118,17 +118,17 @@ const AboutSection = () => {
                                         <div className="relative">
                                             <div className="flex items-center justify-start gap-8 mb-8">
                                                 <div className="" style={{ transform: "rotate(11.73deg)" }}>
-                                                    <div className="w-[270px] h-[90px] bg-black dark:bg-white text-white dark:text-black flex items-center justify-center rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300 shadow-lg">
+                                                    <div className="w-[270px] h-[90px] bg-black dark:bg-white text-white dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium hover:scale-105 transition-transform duration-300 shadow-lg">
                                                         awwwards.
                                                     </div>
                                                 </div>
                                                 <div className="ml-[80px] mt-[-67px]">
-                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                         facebook
                                                     </div>
                                                 </div>
                                                 <div className="-ml-10" style={{ transform: "rotate(20deg)" }}>
-                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                         <span className="flex items-center gap-2">
                                                             <span className="w-5 h-5 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold">
                                                                 S
@@ -140,17 +140,17 @@ const AboutSection = () => {
                                             </div>
                                             <div className="flex items-center justify-start gap-8 -mt-4">
                                                 <div className="-ml-16 mt-[-9px]">
-                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                         CSS WINNER
                                                     </div>
                                                 </div>
                                                 <div style={{ transform: "rotate(-12deg)" }} className="ml-[-20px] mt-[-45px]">
-                                                    <div className="w-[300px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                    <div className="w-[300px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                         /thoughtworks
                                                     </div>
                                                 </div>
                                                 <div className="-ml-8 -mt-10">
-                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-sm font-medium shadow-lg hover:scale-105 transition-transform duration-300">
+                                                    <div className="w-[270px] h-[90px] bg-white/90 dark:bg-white backdrop-blur-sm border border-gray-200 dark:border-gray-300 text-black dark:text-black flex items-center justify-center rounded-full text-[18px] font-medium shadow-lg hover:scale-105 transition-transform duration-300">
                                                         <span className="flex items-center gap-2">
                                                             <span className="text-lg">🔧</span>
                                                             AUTODESK

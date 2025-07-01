@@ -213,17 +213,11 @@ const HeroSection = () => {
                                 initial="hidden"
                                 animate="visible"
                             >
-                                <motion.span
-                                    variants={wordVariants}
+                                <span
                                     className="inline-block mr-4"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        color: "#10b981",
-                                        transition: { duration: 0.3 },
-                                    }}
                                 >
                                     Trusted
-                                </motion.span>
+                                </span>
                                 <motion.span
                                     variants={highlightVariants}
                                     className="bg-black text-white dark:bg-white dark:text-black px-4 py-2 inline-block transition-all duration-300 hover:scale-105 mr-4 relative overflow-hidden"
@@ -257,39 +251,21 @@ const HeroSection = () => {
                                     Partner
                                 </motion.span>
                                 <br />
-                                <motion.span
-                                    variants={wordVariants}
+                                <span
                                     className="inline-block mr-4"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        color: "#3b82f6",
-                                        transition: { duration: 0.3 },
-                                    }}
                                 >
                                     for
-                                </motion.span>
-                                <motion.span
-                                    variants={wordVariants}
+                                </span>
+                                <span
                                     className="inline-block mr-4"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        color: "#8b5cf6",
-                                        transition: { duration: 0.3 },
-                                    }}
                                 >
                                     Your
-                                </motion.span>
-                                <motion.span
-                                    variants={wordVariants}
+                                </span>
+                                <span
                                     className="inline-block mr-4"
-                                    whileHover={{
-                                        scale: 1.1,
-                                        color: "#f59e0b",
-                                        transition: { duration: 0.3 },
-                                    }}
                                 >
                                     Website
-                                </motion.span>
+                                </span>
                                 <motion.span
                                     variants={highlightVariants}
                                     className="bg-black text-white dark:bg-white dark:text-black px-4 py-2 inline-block transition-all duration-300 hover:scale-105 relative overflow-hidden"
@@ -452,28 +428,18 @@ const HeroSection = () => {
                         <motion.div className="flex-1 flex px-6 md:px-12 lg:px-20 h-full items-center" variants={slideUpVariants}>
                             <motion.div className="max-w-4xl" variants={textStaggerVariants}>
                                 <motion.div className="mb-8 space-y-2" variants={textStaggerVariants}>
-                                    <motion.p
+                                    <p
                                         className="text-lg md:text-xl text-black dark:text-white"
-                                        variants={slideUpVariants}
-                                        whileHover={{
-                                            scale: 1.02,
-                                            color: "#10b981",
-                                            transition: { duration: 0.3 },
-                                        }}
+
                                     >
                                         Building the world&apos;s best marketing websites for over a decade.
-                                    </motion.p>
-                                    <motion.p
+                                    </p>
+                                    <p
                                         className="text-lg md:text-xl text-black dark:text-white"
-                                        variants={slideUpVariants}
-                                        whileHover={{
-                                            scale: 1.02,
-                                            color: "#3b82f6",
-                                            transition: { duration: 0.3 },
-                                        }}
+
                                     >
                                         Your trusted partner for strategy, design, and dev.
-                                    </motion.p>
+                                    </p>
                                 </motion.div>
                                 <motion.div
                                     variants={slideUpVariants}
